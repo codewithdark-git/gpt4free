@@ -87,12 +87,9 @@ body {
 }
 
 body {
-    padding: 10px;
     background: var(--colour-1);
     color: var(--colour-3);
     height: 100vh;
-    max-width: 1600px;
-    margin: auto;
 }
 
 .row {

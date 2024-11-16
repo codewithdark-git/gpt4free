@@ -8,7 +8,6 @@ PyExecJS
 duckduckgo-search>=5.0
 nest_asyncio
 werkzeug
-loguru
 pillow
 platformdirs
 fastapi
@@ -21,3 +20,4 @@ pywebview
 plyer
 cryptography
 nodriver
+cloudscraper

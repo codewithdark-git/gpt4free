@@ -17,7 +17,7 @@ from .base_provider import AsyncGeneratorProvider, ProviderModelMixin
 from .helper import get_random_hex
 from .bing.upload_image import upload_image
 from .bing.conversation import Conversation, create_conversation, delete_conversation
-from .BingCreateImages import BingCreateImages
+from .needs_auth.BingCreateImages import BingCreateImages
 from .. import debug
 
 class Tones:
@@ -37,7 +37,6 @@ class Bing(AsyncGeneratorProvider, ProviderModelMixin):
     url = "https://bing.com/chat"
     working = True
     supports_message_history = True
-    supports_gpt_4 = True
     default_model = "Balanced"
     default_vision_model = "gpt-4-vision"
     models = [getattr(Tones, key) for key in Tones.__dict__ if not key.startswith("__")]

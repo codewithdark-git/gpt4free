@@ -1,9 +1,9 @@
 from __future__ import annotations
 
-from .Openai import Openai
+from .OpenaiAPI import OpenaiAPI
 from ...typing import AsyncResult, Messages
 
-class PerplexityApi(Openai):
+class PerplexityApi(OpenaiAPI):
     label = "Perplexity API"
     url = "https://www.perplexity.ai"
     working = True
@@ -15,7 +15,6 @@ class PerplexityApi(Openai):
         "llama-3-sonar-large-32k-online",
         "llama-3-8b-instruct",
         "llama-3-70b-instruct",
-        "mixtral-8x7b-instruct"
     ]
 
     @classmethod
